@@ -38,14 +38,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.lstItems = new System.Windows.Forms.ListBox();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmDuzenle = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSil = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -127,6 +127,30 @@
             this.lstItems.TabIndex = 2;
             this.lstItems.DoubleClick += new System.EventHandler(this.tsmDuzenle_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmDuzenle,
+            this.tsmSil});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 48);
+            // 
+            // tsmDuzenle
+            // 
+            this.tsmDuzenle.Image = global::OOP.Class_Ornek_1.Properties.Resources.icons8_edit_52px;
+            this.tsmDuzenle.Name = "tsmDuzenle";
+            this.tsmDuzenle.Size = new System.Drawing.Size(116, 22);
+            this.tsmDuzenle.Text = "Düzenle";
+            this.tsmDuzenle.Click += new System.EventHandler(this.tsmDuzenle_Click);
+            // 
+            // tsmSil
+            // 
+            this.tsmSil.Image = global::OOP.Class_Ornek_1.Properties.Resources.icons8_trash_64px;
+            this.tsmSil.Name = "tsmSil";
+            this.tsmSil.Size = new System.Drawing.Size(116, 22);
+            this.tsmSil.Text = "Sil";
+            this.tsmSil.Click += new System.EventHandler(this.tsmSil_Click);
+            // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,30 +183,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personel Ekleme Ekranı";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmDuzenle,
-            this.tsmSil});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(117, 48);
-            // 
-            // tsmDuzenle
-            // 
-            this.tsmDuzenle.Image = global::OOP.Class_Ornek_1.Properties.Resources.icons8_edit_52px;
-            this.tsmDuzenle.Name = "tsmDuzenle";
-            this.tsmDuzenle.Size = new System.Drawing.Size(116, 22);
-            this.tsmDuzenle.Text = "Düzenle";
-            this.tsmDuzenle.Click += new System.EventHandler(this.tsmDuzenle_Click);
-            // 
-            // tsmSil
-            // 
-            this.tsmSil.Image = global::OOP.Class_Ornek_1.Properties.Resources.icons8_trash_64px;
-            this.tsmSil.Name = "tsmSil";
-            this.tsmSil.Size = new System.Drawing.Size(116, 22);
-            this.tsmSil.Text = "Sil";
-            this.tsmSil.Click += new System.EventHandler(this.tsmSil_Click);
-            // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,9 +202,10 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

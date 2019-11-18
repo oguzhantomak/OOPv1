@@ -28,13 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnClass = new System.Windows.Forms.Button();
+            this.btnStruct = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnClass
+            // 
+            this.btnClass.Location = new System.Drawing.Point(13, 13);
+            this.btnClass.Name = "btnClass";
+            this.btnClass.Size = new System.Drawing.Size(150, 43);
+            this.btnClass.TabIndex = 0;
+            this.btnClass.Text = "Class";
+            this.btnClass.UseVisualStyleBackColor = true;
+            this.btnClass.Click += new System.EventHandler(this.BtnClass_Click);
+            // 
+            // btnStruct
+            // 
+            this.btnStruct.Location = new System.Drawing.Point(12, 62);
+            this.btnStruct.Name = "btnStruct";
+            this.btnStruct.Size = new System.Drawing.Size(150, 43);
+            this.btnStruct.TabIndex = 0;
+            this.btnStruct.Text = "Struct";
+            this.btnStruct.UseVisualStyleBackColor = true;
+            this.btnStruct.Click += new System.EventHandler(this.BtnStruct_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(184, 123);
+            this.Controls.Add(this.btnStruct);
+            this.Controls.Add(this.btnClass);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnClass;
+        private System.Windows.Forms.Button btnStruct;
     }
 }
 
