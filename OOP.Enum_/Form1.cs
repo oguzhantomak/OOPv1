@@ -30,6 +30,24 @@ Personel Departman: {personel.Departman}");
 
             listBox1.Items.Add(personel);
             textBox1.Text = textBox2.Text = "";
+
+            //switch (personel.Departman)
+            //{
+            //    case Departman.Yazılım:
+            //        break;
+            //    case Departman.Sistem:
+            //        break;
+            //    case Departman.Grafik:
+            //        break;
+            //    case Departman.Muhasebe:
+            //        break;
+            //    case Departman.TeknikÇizim:
+            //        break;
+            //    case Departman.Ofis:
+            //        break;
+            //    default:
+            //        break;
+            //}
         }
 
         private void Form1_Load(object sender, EventArgs e)
