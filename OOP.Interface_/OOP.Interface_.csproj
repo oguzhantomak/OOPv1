@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44EFDEBA-56CA-44B6-A951-1A2236B9444A}</ProjectGuid>
+    <ProjectGuid>{4DCF5E2B-3F6D-4A69-892C-FAA170D82662}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OOP.Sealed_</RootNamespace>
-    <AssemblyName>OOP.Sealed_</AssemblyName>
+    <RootNamespace>OOP.Interface_</RootNamespace>
+    <AssemblyName>OOP.Interface_</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
